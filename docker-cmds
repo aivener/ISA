@@ -1,0 +1,3 @@
+docker run -it --name web --link mysql:db -p 8000:8000 -v ~/ISA-Project:/app tp33/django:1.2
+
+mod_wsgi-express start-server --working-directory /app/market --url-alias /static /app/market/market/static /app/market/market/wsgi.py &
